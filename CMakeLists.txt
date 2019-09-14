@@ -5,7 +5,7 @@ set(oALibraryDir $ENV{OPENAPP_ROOT})
 set(SourcesDir Sources)
 
 if (UNIX)
-    set(CMAKE_CXX_FLAGS "-Wall -Werror -Wextra -g3")
+    set(CMAKE_CXX_FLAGS "-Wall -Werror -Wextra")
 endif ()
 
 set(CMAKE_CXX_STANDARD 17)
