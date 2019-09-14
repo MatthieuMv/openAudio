@@ -19,6 +19,7 @@ int main(void)
         oA::Audio::Initialize();
         auto voice = oA::Audio::OpenVoice();
 
+        voice->play();
         SDL_Delay(3000);
         return 0;
     } catch (const oA::Error &e) {
