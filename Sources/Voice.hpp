@@ -35,6 +35,8 @@ public:
     void pause(void);
     void stop(void);
 
+    bool isPlaying(void) const noexcept { return _play; }
+
 private:
     Vector<IEffectPtr> _effects;
     mutable UInt _index = 0;

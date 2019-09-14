@@ -66,7 +66,8 @@ void oA::Audio::AudioCallback(void *userdata, UByte *buffer, Int size)
     voices->removeIf([buffer, size](const VoicePtr &voice) {
         if (voice.unique())
             return true;
-        voice->compute(buffer, size, AudioInitializer._device);
+        if (voice->isPlaying())
+            voice->compute(buffer, size, AudioInitializer._device);
         return false;
     });
 }
