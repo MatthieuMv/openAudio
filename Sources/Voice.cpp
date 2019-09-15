@@ -23,6 +23,11 @@ void oA::Voice::compute(UByte *buffer, Int size, const AudioDevice &device) cons
     }
 }
 
+void oA::Voice::addEffect(oA::IEffectPtr &effect)
+{
+    (void) effect;
+}
+
 void oA::Voice::play(void)
 {
     _play = true;

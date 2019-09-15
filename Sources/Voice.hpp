@@ -35,6 +35,8 @@ public:
     void pause(void);
     void stop(void);
 
+    void addEffect(IEffectPtr &effect);
+
     bool isPlaying(void) const noexcept { return _play; }
 
 private:
